@@ -1,0 +1,91 @@
+Pokemon Trade Data Format
+10 bytes = Pokemon Name
+2 bytes = Filler
+2 bytes = Pokemon Offered  +12
+2 bytes = Unknown Word (0505)+14
+2 bytes = Unknown Word (0404)+16
+2 bytes = Unknown Word (0404)+18
+1 byte = 0x1 +19
+1 byte = Filler(00)? +20
+2 bytes = Filler (0000)+22
+2 bytes = OT ID + 24
+2 bytes = Filler (0000) +26
+2 bytes = Unknown Word (0505)+28
+2 bytes = Unknown Word (0505)+30
+2 bytes = Unknown Word (1e00)+32
+2 bytes = Filler (0000)+34
+3 bytes = Unknown Word (409c) - Natures and some other stuff +36
+1 byte = Filler (00) +39
+2 bytes = Item Data +40
+1 byte = 0xFF +42
+7 bytes = OT Name +43
+2 bytes = Filler (0000) +50
+2 bytes = Filler (0000)+52
+1 byte = Unknown Byte +53
+1 byte = 0x0A - Used by tool to determine trade amount
+2 bytes = Pokemon Wanted+56
+2 bytes = Filler (0000)
+
+* A total of 60 bytes
+
+Dim TradeData(59) As Byte
+TradeData(0) = &H0
+TradeData(1) = &H0
+TradeData(2) = &H0
+TradeData(3) = &H0
+TradeData(4) = &H0
+TradeData(5) = &H0
+TradeData(6) = &H0
+TradeData(7) = &H0
+TradeData(8) = &H0
+TradeData(9) = &H0
+TradeData(10) = &H0
+TradeData(11) = &H0 '0-11 = Name
+TradeData(12) = &H0 '12-13 = PK Offered
+TradeData(13) = &H0
+TradeData(14) = &H5 '14-15 = 0505 unknown word
+TradeData(15) = &H5
+TradeData(16) = &H4 '16-17 = 0404 unknown word
+TradeData(17) = &H4
+TradeData(18) = &H4 '18-19 = 0404 unknown word
+TradeData(19) = &H4
+TradeData(20) = &H1 '20-21 = 0100 unknown word
+TradeData(21) = &H0
+TradeData(22) = &H0 '22-23 = 0000 Filler
+TradeData(23) = &H0
+TradeData(24) = &H0 '24-25 = OTID - reversed
+TradeData(25) = &H0
+TradeData(26) = &H0 '26-27 = unknown word filled with 0000
+TradeData(27) = &H0
+TradeData(28) = &H5 '28-29 = 0505 unknown word
+TradeData(29) = &H5
+TradeData(30) = &H5 '30-31 = 0505 unknown word
+TradeData(31) = &H5
+TradeData(32) = &H1E '32-33 = 1e00 unknown word
+TradeData(33) = &H0
+TradeData(34) = &H0 '34-35 = Filler
+TradeData(35) = &H40
+TradeData(36) = &H9C '36-37 = unknown word
+TradeData(37) = &H1
+TradeData(38) = &H0 '38-39 = Natures
+TradeData(39) = &H0
+TradeData(40) = &H0 '40-41 = Item Data
+TradeData(41) = &H0
+TradeData(42) = &HFF '0xFF
+TradeData(43) = &H0 '43-49 = OTNAME
+TradeData(44) = &H0
+TradeData(45) = &H0
+TradeData(46) = &H0
+TradeData(47) = &H0
+TradeData(48) = &H0
+TradeData(49) = &H0
+TradeData(50) = &H0 '50-51 = Filler
+TradeData(51) = &H0
+TradeData(52) = &H0 '52-53 = Filler
+TradeData(53) = &H0
+TradeData(54) = &H0 '54 Filler Byte
+TradeData(55) = &HA '55 = 0xA used to determine trade amount in loop
+TradeData(56) = &H0 '56-57 = Pokemon Wanted
+TradeData(57) = &H0
+TradeData(58) = &H0 '58-59 = Filler
+TradeData(59) = &H0

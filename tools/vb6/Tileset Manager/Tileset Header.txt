@@ -1,0 +1,21 @@
+struct FireRed {
+  u8  compressed		//00 = not compressed|| 01 = compressed
+  u8  tileset			//00 = main tileset || 01 = secundary tileset
+  u16 filler		        //00 00
+  u32 *image			//image pointer
+  u32 *palette			//pallete pointer
+  u32 *block			//block pointer
+  u32 *animation		//Animations routine pointer
+  u32 *behavior  		//Behavior pointer
+};
+
+struct Ruby {
+  u8  compressed		//00 = not compressed|| 01 = compressed
+  u8  tileset			//00 = main tileset || 01 = secundary tileset
+  u16 filler		        //00 00
+  u32 *image			//image pointer
+  u32 *palette			//pallete pointer
+  u32 *block			//block pointer
+  u32 *behavior  		//Behavior pointer
+  u32 *animation		//Animations routine pointer
+};

@@ -1,0 +1,7 @@
+frmMain = 115, 109, 900, 558, C, 23, 23, 809, 472, C
+clsCommonDialog = 0, 0, 0, 0, C
+modGBAGraphics = 23, 23, 808, 472, C
+modNiceStuff = 46, 46, 831, 495, C
+GBATileEditor = 46, 46, 848, 508, C, 69, 69, 855, 518, C
+frmAbout = 0, 0, 0, 0, C, 92, 92, 878, 541, C
+frmRepoint = 69, 69, 871, 531, C, 115, 115, 901, 564, C

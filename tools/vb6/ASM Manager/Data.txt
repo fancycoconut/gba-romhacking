@@ -1,0 +1,23 @@
+Different Music Offsets
+================
+Fire Red: 1DD0F6
+Ruby:     1DDEFA
+Emerald:  2E0132
+
+'Dim FR_VAR_Address As Byte
+'FR_VAR_Address = &H806E455
+'
+'Dim RS_VAR_Address As Byte
+'RS_VAR_Address = &H806E455
+'
+'Dim Emer_VAR_Address As Byte
+'Emer_VAR_Address = &H806E455
+'
+'Dim FR_Return_Address As Byte
+'FR_Return_Address = &H81DD10F
+'
+'Dim RS_Return_Address As Byte
+'RS_Return_Address = &H81DDF13
+'
+'Dim Emer_Return_Address As Byte
+'Emer_Return_Address = &H82E014B

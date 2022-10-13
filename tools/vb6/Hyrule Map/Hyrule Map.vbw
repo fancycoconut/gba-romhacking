@@ -1,0 +1,6 @@
+frmMain = 157, 164, 959, 626, , 23, 23, 825, 482, C
+clsCommonDialog = 0, 0, 0, 0, C
+modGBAGraphics = 138, 138, 940, 600, C
+modNiceStuff = 0, 0, 0, 0, C
+xpWellsStatusBar = 92, 92, 894, 554, C, 46, 46, 848, 508, C
+StatusBarPanels = 0, 0, 0, 0, C, 46, 46, 848, 508, C

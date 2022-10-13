@@ -1,0 +1,7 @@
+frmMain = 194, 23, 979, 474, , 23, 23, 809, 473, C
+modNiceStuff = 46, 46, 831, 495, C
+clsCommonDialog = 0, 0, 0, 0, C
+modTextSapp = 69, 69, 944, 454, C
+cStringBuilder = 0, 0, 0, 0, C
+modGBAGraphics = 23, 23, 825, 485, C
+frmAbout = 138, 138, 924, 588, C, 37, 36, 823, 486, C

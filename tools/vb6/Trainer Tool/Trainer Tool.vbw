@@ -1,0 +1,6 @@
+frmMain = 113, 22, 906, 440, , 25, 23, 819, 444, C
+modNiceStuff = 0, 0, 796, 420, 
+modGBAGraphics = 46, 46, 848, 508, C
+clsCommonDialog = 0, 0, 0, 0, C
+frmAbout = 0, 0, 0, 0, C, 50, 50, 844, 469, C
+frmRepoint = 154, 143, 948, 562, , 75, 75, 869, 494, C

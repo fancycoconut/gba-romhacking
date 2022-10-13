@@ -1,0 +1,8 @@
+frmMain = 148, 109, 578, 494, , 43, 21, 514, 402, C
+clsCommonDialog = 88, 108, 611, 561, C
+modNiceStuff = 44, 58, 474, 378, C
+modTextSapp = 69, 20, 499, 338, C
+cStringBuilder = 44, 54, 480, 384, C
+frmAbout = 86, 60, 516, 378, C, 24, 74, 454, 394, C
+frmEditAmount = 266, 71, 694, 386, C, 51, 46, 481, 366, C
+modGBAGraphics = 50, 50, 603, 485, C

@@ -1,0 +1,9 @@
+frmMain = 381, -1, 934, 432, C, 111, 14, 703, 465, C
+clsCommonDialog = 100, 100, 653, 535, C
+modFunctions = 20, 11, 575, 448, C
+modExtras = 302, 25, 853, 460, C
+frmAbout = 125, 125, 678, 560, C, 200, 200, 753, 635, C
+xpWellsStatusBar = 31, 10, 584, 445, C, 125, 125, 678, 560, C
+StatusBarPanels = 200, 200, 753, 635, C, 0, 0, 553, 435, C
+modNiceStuff = 50, 50, 603, 485, C
+PaletteIndex = 145, 46, 934, 491, C, 119, 181, 912, 626, C

@@ -1,0 +1,8 @@
+frmMain = 16, 50, 529, 390, C, 19, 19, 530, 430, C
+modNiceStuff = 86, 240, 512, 553, C
+frmAbout = 79, 107, 505, 420, C, 36, -13, 462, 300, C
+clsCommonDialog = 88, 116, 514, 429, C
+modFunctions = 434, 64, 868, 384, C
+frmPreview = 25, 25, 561, 444, , 50, 50, 587, 469, C
+frmPalette = 110, 108, 646, 527, C, 75, 75, 611, 494, C
+modGBAGraphics = 50, 50, 695, 423, 
