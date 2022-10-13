@@ -1,0 +1,258 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TXT
+//
+
+README                  TXT     DISCARDABLE     "Readme.txt"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+frmMain DIALOGEX 0, 0, 230, 161
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Shiny Hack Maker"
+MENU dlgMenu
+FONT 8, "Tahoma"
+BEGIN
+    GROUPBOX        "Information",fraROMInformation,3,117,223,40
+    CONTROL         "ROM:",lblROMName,"Static",SS_SIMPLE | SS_CENTERIMAGE | 
+                    WS_GROUP,9,127,18,9,WS_EX_TRANSPARENT
+    CONTROL         "Code:",lblGameCode,"Static",SS_SIMPLE | SS_CENTERIMAGE | 
+                    WS_GROUP,9,135,20,10,WS_EX_TRANSPARENT
+    CONTROL         "State:",lbl1,"Static",SS_SIMPLE | SS_CENTERIMAGE | 
+                    WS_GROUP,9,143,21,9,WS_EX_TRANSPARENT
+    LTEXT           "???",lblROM,37,127,93,8,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    LTEXT           "???",lblCode,37,135,20,8,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    LTEXT           "???",lblState,37,143,45,8,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        txtShinyHack,147,89,35,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Patch",cmdPatch,189,89,34,14,WS_DISABLED
+    GROUPBOX        "Bytes Needed",fraNeededBytes,3,76,97,36
+    LTEXT           "Dec:",lblDec,11,89,17,8
+    LTEXT           "Hex:",lblHex,11,98,17,8
+    LTEXT           "???",lblDec2,30,89,60,8
+    LTEXT           "???",lblHex2,30,98,60,8
+    GROUPBOX        "Shiny Hack Routine",fraShinyHack,103,76,124,36
+    LTEXT           "Offset:",lblOffset,115,90,25,8
+    EDITTEXT        txtFlagRoutine,147,89,35,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Insert",cmdInsert,189,89,34,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    GROUPBOX        "Flag Routine",fraFlagRoutine,103,76,124,36,NOT 
+                    WS_VISIBLE
+    CONTROL         "Shiny Hack Routine",optShinyHack,"Button",
+                    BS_AUTORADIOBUTTON,17,64,82,8
+    CONTROL         "Flag Routine",optFlagRoutine,"Button",
+                    BS_AUTORADIOBUTTON,127,64,82,8
+    CONTROL         113,imgBanner,"Static",SS_BITMAP,0,0,230,60
+END
+
+frmAbout DIALOGEX 0, 0, 205, 122
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "About"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Okay",cmdOkay,161,106,39,14
+    GROUPBOX        "Greetz and Credits:",fraCredits,5,68,196,35
+    LTEXT           "Ash2000",Ash2000,12,79,28,8
+    LTEXT           "Darthatron",Darthatron,57,79,38,8
+    LTEXT           "HackMew",HackMew,106,79,31,8
+    LTEXT           "Mastermind_X",Mastermind_X,147,79,47,8
+    LTEXT           "Aminex",Aminex,11,88,26,8
+    LTEXT           "D-Trogh",DTrogh,57,88,28,8
+    LTEXT           "interdpth",Interdpth,105,88,31,8
+    CTEXT           "-+Special C Version+-",lblSlogan,0,60,205,8
+    CTEXT           "~Shiny Hack Implementing Tool~",lblDescription,0,53,205,
+                    8
+    CONTROL         116,imgAbout,"Static",SS_BITMAP | SS_CENTERIMAGE,0,0,205,
+                    50
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+dlgMenu MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open ROM",                    mnuOpen
+        MENUITEM "Quit",                        mnuQuit
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Readme",                      mnuReadme
+        MENUITEM "About",                       mnuAbout
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+dlgIcon                 ICON    DISCARDABLE     "Icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "manifest.xml"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+ToolInfo VERSIONINFO
+ FILEVERSION 1,0,1,0
+ PRODUCTVERSION 1,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Recoded from scratch in C. Thanks to interdpth & cearn :)\0"
+            VALUE "CompanyName", "Advance Hacking Productions\0"
+            VALUE "FileDescription", "Shiny Hack Implementing Tool\0"
+            VALUE "FileVersion", "1, 0, 1, 0\0"
+            VALUE "InternalName", "Shiny Hack Maker\0"
+            VALUE "LegalCopyright", "Copyright © 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Shiny Hack Maker.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Shiny Hack Maker\0"
+            VALUE "ProductVersion", "1, 0, 1, 0\0"
+            VALUE "SpecialBuild", "Special C Version\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+mainBanner              BITMAP  DISCARDABLE     "Main Banner.bmp"
+aboutbanner             BITMAP  DISCARDABLE     "About Banner.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+KeyboardShortcuts ACCELERATORS DISCARDABLE 
+BEGIN
+    "O",            mnuOpen,                VIRTKEY, CONTROL, NOINVERT
+    "Q",            mnuQuit,                VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          mnuReadme,              VIRTKEY, NOINVERT
+    VK_F2,          mnuAbout,               VIRTKEY, CONTROL, NOINVERT
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
